@@ -1,6 +1,6 @@
 # Site settings
-title: Site title
-description: Site description
+title: Aesop's Fables
+description: Using Aesop's Fables to demonstrate Jekyll functionality.
 url: "http://tylercampbell.github.io"
 baseurl: "/jekyll-starter-kit"
 

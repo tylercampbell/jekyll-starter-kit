@@ -2,17 +2,23 @@
 layout: default
 ---
 
+<header>
+  <h1>News</h1>
+</header>
+
 {% for post in paginator.posts %}
   <article>
-    <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
-    <p>{{ post.date | date: site.date_format }}</p>
-    <p>
+    <header>
+      <a href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+    </header>
+    <section>
       {% if post.summary %}
         {{ post.summary }}
       {% else %}
         {{ post.excerpt }}
       {% endif %}
-    </p>
+    </section>
   </article>
 {% endfor %}
 

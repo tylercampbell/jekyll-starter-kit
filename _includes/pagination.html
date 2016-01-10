@@ -1,6 +1,6 @@
 <div id="pagination">
 
-  <div id="left">
+  <div id="newer">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}/">Newer</a>
     {% else %}
@@ -8,7 +8,7 @@
     {% endif %}
   </div>
 
-  <div class="right">
+  <div id="older">
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl }}/">Older</a>
     {% else %}
