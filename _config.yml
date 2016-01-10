@@ -41,7 +41,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: page
+      layout: fable
 
 # Exclude
 exclude: [node_modules, gulpfile.js, package.json]
