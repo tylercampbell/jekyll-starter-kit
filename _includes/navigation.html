@@ -1,0 +1,9 @@
+<nav>
+  <a href="{{ "/" | prepend: site.baseurl }}" class="site-title">Home</a>
+  {% for page in site.pages %}
+    {% if page.title %}
+      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+  <a href="{{ "/news/" | prepend: site.baseurl }}">News</a>
+</nav>

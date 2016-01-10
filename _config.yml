@@ -1,0 +1,47 @@
+# Site settings
+title: Site title
+description: Site description
+url: "http://tylercampbell.github.io"
+baseurl: "/jekyll-starter-kit"
+
+# Color variable for Android & Windows tiles
+color: "#2F3BA2"
+
+# Permalinks
+permalink          : pretty
+paginate           : 10
+paginate_path      : '/news/page:num'
+excerpt_separator  : '<!--more-->'
+
+# Build settings
+markdown: kramdown
+
+# Show drafts and future posts?
+future             : false
+show_drafts        : false
+
+# Gives you more accurate related posts
+lsi                : false
+limit_posts        : 0
+
+
+# Sass
+sass:
+  sass_dir: assets/sass
+  style: compressed
+
+# Collections
+collections:
+  fables:
+    output: true
+    permalink: /fables/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+
+# Exclude
+exclude: [node_modules, gulpfile.js, package.json]

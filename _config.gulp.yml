@@ -1,0 +1,14 @@
+paginate    : 2
+
+# No baseurl needed for gulp
+baseurl     : ""
+
+# Show drafts and future posts?
+future      : true
+show_drafts : true
+
+# Gives you more accurate related posts
+lsi         : false
+
+# Max posts to render
+limit_posts : 10
