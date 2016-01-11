@@ -1,0 +1,17 @@
+{
+  "name": "jekyllstarterkit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "_site"
+  ],
+  "dependencies": {
+    "reset-scss": "*",
+    "normalize-scss": "~3.0.3",
+    "sanitize-css": "~3.0.0",
+    "typographic": "~2.9.3"
+  }
+}

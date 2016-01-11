@@ -5,11 +5,9 @@ layout: default
 
 ## A NEW TRANSLATION BY V. S. VERNON JONES
 
-WITH AN INTRODUCTION BY G. K. CHESTERTON AND ILLUSTRATIONS BY ARTHUR RACKHAM
+### WITH AN INTRODUCTION BY G. K. CHESTERTON AND ILLUSTRATIONS BY ARTHUR RACKHAM
 
 1912 EDITION
-
-![cover](assets/images/cover.jpg)
 
 {% for fable in site.fables %}
   <article>
@@ -17,3 +15,5 @@ WITH AN INTRODUCTION BY G. K. CHESTERTON AND ILLUSTRATIONS BY ARTHUR RACKHAM
     {% if fable.moral %}{{ fable.moral }}{% endif %}
   </article>
 {% endfor %}
+
+![cover](assets/images/cover.jpg)
