@@ -1,9 +1,11 @@
 <nav>
-  <a href="{{ "/" | prepend: site.baseurl }}" class="site-title">Home</a>
-  {% for page in site.pages %}
-    {% if page.title %}
-      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {% endif %}
-  {% endfor %}
-  <a href="{{ "/news/" | prepend: site.baseurl }}">News</a>
+  <ul>
+    <li><a href="{{ "/" | prepend: site.baseurl }}" class="site-title">Home</a></li>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <li><a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
+  </ul>
 </nav>

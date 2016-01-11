@@ -1,19 +1,12 @@
-<div id="pagination">
-
-  <div id="newer">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}/">Newer</a>
-    {% else %}
-      Newer
-    {% endif %}
-  </div>
-
-  <div id="older">
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}/">Older</a>
-    {% else %}
-      Older
-    {% endif %}
-  </div>
-
-</div>
+<section id="paginator">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}/"><button>Newer</button></a>
+  {% else %}
+    <button disabled>Newer</button>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}/"><button>Older</button></a>
+  {% else %}
+    <button disabled>Older</button>
+  {% endif %}
+</section>
