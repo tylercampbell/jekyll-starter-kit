@@ -8,16 +8,13 @@
 }
 
 @import
-  // "../../bower_components/reset-scss/reset.scss",
-  "../../bower_components/normalize-scss/_normalize.scss",
-  // "../../bower_components/sanitize-css/sanitize.scss",
-  "../../bower_components/typographic/scss/typographic.scss",
+  "typographic",
   "style",
   "flex"
 ;
 
 $line-height-ratio  : 1.75;
-$header-ratio       : $perfect-fourth;
+$header-ratio       : $golden;
 $body-font          : $garamond;
 $body-font-weight   : 300;
 $body-color         : #666;
@@ -33,6 +30,6 @@ $vertical-rhythm    : true;
 @include typographic();
 
 main {
-  max-width: 50em;
+  max-width: 40em;
   margin: 0 auto;
 }
