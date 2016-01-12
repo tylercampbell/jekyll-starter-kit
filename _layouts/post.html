@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<article>
+<header>
+  <h1>{{ page.title }}</h1>
+</header>
 
-  <header>
-    <h1>{{ page.title }}</h1>
+<article>
+  <section>
     <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  </section>
 
   <section>
     {{ content }}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<header>
+  <h1>AESOP'S FABLES</h1>
+</header>
+
+<article>
+  <img src="assets/images/cover.jpg">
+</article>
+
+<aside id="toc">
+  <ul>
+    {% for fable in site.fables %}
+      <li>
+        <a href="{{ fable.url | prepend: site.baseurl }}">{{ fable.title }}</a>
+        {% if fable.moral %} <small>{{ fable.moral }}</small>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</aside>

@@ -5,3 +5,27 @@
     margin: 0 2rem;
   }
 }
+
+#toc {
+  li {
+    list-style: none;
+    padding: 0.8rem 0;
+    &:not(:last-of-type) {
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+.animal_picture {
+  text-align: center;
+  &:not(:last-of-type) {
+    margin-bottom: 6rem;
+  }
+  svg {
+    max-width: 60%;
+  }
+  figcaption {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+}
