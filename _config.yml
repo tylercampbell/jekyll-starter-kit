@@ -39,9 +39,15 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
     values:
-      layout: fable
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "fables" # the fables collection
+    values:
+      layout: "fable" # will default to the fable layout
 
 # Exclude
 exclude: [bower_components, node_modules, gulpfile.js, package.json]

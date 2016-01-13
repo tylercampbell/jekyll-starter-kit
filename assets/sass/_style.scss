@@ -10,8 +10,13 @@
   li {
     list-style: none;
     padding: 0.8rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &:not(:last-of-type) {
       border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    }
+    a {
+      white-space: nowrap;
     }
   }
 }
