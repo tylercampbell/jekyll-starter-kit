@@ -14,7 +14,6 @@ layout: default
     {% for fable in site.fables %}
       <li>
         <a href="{{ fable.url | prepend: site.baseurl }}">{{ fable.title }}</a>
-        {% if fable.moral %}<br><small>{{ fable.moral }}</small>{% endif %}
       </li>
     {% endfor %}
   </ul>

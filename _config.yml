@@ -1,53 +1,48 @@
 # Site settings
-title: Aesop's Fables
-description: Using Aesop's Fables to demonstrate Jekyll functionality.
-url: "http://tylercampbell.github.io"
-baseurl: "/jekyll-starter-kit"
+title         : Aesop's Fables
+description   : Using Aesop's Fables to demonstrate Jekyll functionality.
+url           : "http://tylercampbell.github.io"
+baseurl       : "/jekyll-starter-kit"
 
 # Color variable for Android & Windows tiles
-color: "#2F3BA2"
+color         : "#2F3BA2"
 
 # Permalinks
-permalink          : pretty
-paginate           : 10
-paginate_path      : '/news/page:num'
-excerpt_separator  : '<!--more-->'
+permalink     : pretty
+paginate      : 10
+paginate_path : '/news/page:num'
 
-# Build settings
-markdown: kramdown
-
-# Show drafts and future posts?
-future             : false
-show_drafts        : false
+# Filtering Content
+future        : false
+show_drafts   : false
+limit_posts   : 0
 
 # Gives you more accurate related posts
-lsi                : false
-limit_posts        : 0
-
+lsi           : false
 
 # Sass
-sass:
-  sass_dir: assets/sass
-  style: compressed
+sass          :
+  sass_dir    : assets/sass
+  style       : compressed
 
 # Collections
-collections:
-  fables:
-    output: true
-    permalink: /fables/:path/
+collections   :
+  fables      :
+    output    : true
+    permalink : /fables/:path/
 
-defaults:
+defaults      :
   -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+    scope     :
+      path    : "" # an empty string here means all files in the project
+    values    :
+      layout  : "default"
   -
-    scope:
-      path: ""
-      type: "fables" # the fables collection
-    values:
-      layout: "fable" # will default to the fable layout
+    scope     :
+      path    : ""
+      type    : "fables" # the fables collection
+    values    :
+      layout  : "fable" # will default to the fable layout
 
 # Exclude
-exclude: [bower_components, node_modules, gulpfile.js, package.json]
+exclude       : [bower_components, node_modules, gulpfile.js, package.json]
