@@ -9,7 +9,7 @@ color         : "#2F3BA2"
 
 # Permalinks
 permalink     : pretty
-paginate      : 10
+paginate      : 2
 paginate_path : '/news/page:num'
 
 # Filtering Content
