@@ -6,7 +6,8 @@
   }
 }
 
-#toc {
+#toc,
+#related {
   li {
     list-style: none;
     padding: 0.8rem 0;
@@ -18,6 +19,10 @@
       border-bottom: .1rem solid rgba(0, 0, 0, .2);
     }
   }
+}
+
+#related {
+  margin-top: 1rem;
 }
 
 .animal_picture {

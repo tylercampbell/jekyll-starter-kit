@@ -21,7 +21,6 @@ layout: default
 
 </article>
 
-{%if page.animals %}
 <aside>
     {% for page_animal in page.animals %}
       {% for animal in site.data.animals %}
@@ -34,4 +33,19 @@ layout: default
       {% endfor %}
     {% endfor %}
 </aside>
-{% endif %}
+
+<section id="related">
+  <ul>
+    {% for fable in site.fables %}
+      {% unless page.url == fable.url %}
+        {% for animal in page.animals %}
+          {% if fable.animals contains animal %}
+            <li>
+              <a href="{{ fable.url | prepend: site.baseurl }}">{{ fable.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>

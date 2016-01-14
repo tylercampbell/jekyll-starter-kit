@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Working With Data
+title: Animals
 animals:
  - dog
  - sow
