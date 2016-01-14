@@ -34,7 +34,7 @@ layout: default
     {% endfor %}
 </aside>
 
-<section id="related">
+<article id="related">
   <ul>
     {% for fable in site.fables %}
       {% unless page.url == fable.url %}
@@ -48,4 +48,4 @@ layout: default
       {% endunless %}
     {% endfor %}
   </ul>
-</section>
+</article>
