@@ -10,7 +10,7 @@ color         : "#2F3BA2"
 # Permalinks
 permalink     : pretty
 paginate      : 2
-paginate_path : '/news/page:num'
+paginate_path : '/updates/page:num'
 
 # Filtering Content
 future        : false
@@ -43,6 +43,10 @@ defaults      :
       type    : "fables" # the fables collection
     values    :
       layout  : "fable" # will default to the fable layout
+
+# Pagination
+gems:
+  - jekyll-paginate
 
 # Exclude
 exclude       : [bower_components, node_modules, gulpfile.js, package.json]

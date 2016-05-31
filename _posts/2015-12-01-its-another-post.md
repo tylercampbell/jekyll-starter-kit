@@ -68,10 +68,6 @@ adder(2, 6);
 // > 8
 {% endhighlight %}
 
-### Gists via GitHub Pages
-
-{% gist 13f94b734a4ddb132735 gist.md %}
-
 ### Lists
 
 Muris condimentum nibh, ut fermentum massa justo sit amet risus.
